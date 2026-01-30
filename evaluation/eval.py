@@ -76,6 +76,35 @@ dataset = DarkPhotonDataset(
     verbose=True
 )
 
+# Function to compute width (from dataset_statistics.ipynb)
+def compute_width(x):
+    """
+    Compute width (max ΔR) for a graph
+    x: tensor of shape [num_nodes, 4] with [layer, eta, phi, energy]
+    """
+    layer = x[:, 0]
+    widths = []
+    for l in range(4):
+        mask = (layer == l)
+        coords = x[mask][:, 1:3]  # [eta, phi]
+        if coords.size(0) < 2:
+            continue
+        diff = coords.unsqueeze(0) - coords.unsqueeze(1)
+        dR = torch.norm(diff, dim=-1)
+        max_dR = dR.max().item()
+        widths.append(max_dR)
+    width = max(widths) if widths else 0.0
+    return width
+
+
+# Filter dataset to keep only graphs with width > 0
+dataset_nonzero_width = [data for data in dataset if compute_width(data.x) > 0]
+print(f"Original dataset size: {len(dataset)}")
+print(f"Filtered dataset (width > 0): {len(dataset_nonzero_width)}")
+
+# Use dataset_nonzero_width for training instead of dataset
+dataset = dataset_nonzero_width
+
 _, testset = train_test_split(dataset, test_size=0.2)
 generator = torch.Generator()
 generator.manual_seed(seed)
