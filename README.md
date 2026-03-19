@@ -13,7 +13,10 @@ We train and evaluate the model and compare it with other architectures (Multila
 <img src="images/metrics.png" alt="Metrics" width="800"/>
 
 ## Visualization of some physical quantities
-We analyse physics-motivated variables across prediction categories (TP, TN, FP, FN) to interpret model behaviour.
+We analyse physics-motivated variables across prediction categories (TP, TN, FP, FN) to interpret model behaviour. The plots show the correlation between reclustered jet pTp_T
+pT​ and eratioe_\mathrm{ratio}
+eratio​, and between eratioe_\mathrm{ratio}
+eratio​ and the number of graph nodes, for each prediction category.
 
 <img src="images/expert.png" alt="Attention Maps" width="600"/>
 
