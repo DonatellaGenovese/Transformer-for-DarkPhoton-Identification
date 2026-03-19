@@ -18,7 +18,7 @@ model behaviour. The plots show the correlation between reclustered jet $p_T$ an
 and between $e_{ratio}$ and the number of graph nodes, for each prediction category.
 
 <p float="left">
-  <img src="images/expert.png" alt="pT vs eratio" width="49%"/>
-  <img src="images/expert2.png" alt="eratio vs nodes" width="49%"/>
+  <img src="images/corr_pt.png" alt="pT vs eratio" width="49%"/>
+  <img src="images/corr_eratio.png" alt="eratio vs nodes" width="49%"/>
 </p>
 
