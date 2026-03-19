@@ -12,11 +12,13 @@ The dataset is based on publicly released Monte Carlo simulations of the ATLAS d
 We train and evaluate the model and compare it with other architectures (Multilayer perception, Graph Convolutional Neural network, Graph Transformer and Convolutional Neural Network). The results are shown in the table \
 <img src="images/metrics.png" alt="Metrics" width="800"/>
 
-## Visualization of some physical quantities
-We analyse physics-motivated variables across prediction categories (TP, TN, FP, FN) to interpret model behaviour. The plots show the correlation between reclustered jet pTp_T
-pT​ and eratioe_\mathrm{ratio}
-eratio​, and between eratioe_\mathrm{ratio}
-eratio​ and the number of graph nodes, for each prediction category.
+## Visualization of Physical Quantities
+We analyse physics-motivated variables across prediction categories (TP, TN, FP, FN) to interpret 
+model behaviour. The plots show the correlation between reclustered jet $p_T$ and $e_{ratio}$, 
+and between $e_{ratio}$ and the number of graph nodes, for each prediction category.
 
-<img src="images/expert.png" alt="Attention Maps" width="600"/>
+<p float="left">
+  <img src="images/expert.png" alt="pT vs eratio" width="49%"/>
+  <img src="images/expert2.png" alt="eratio vs nodes" width="49%"/>
+</p>
 
