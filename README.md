@@ -1,5 +1,5 @@
 # Transformer for DarkPhoton Identification
-A repository for ivestigating Dark Photon identifications with Transformer architectures
+A repository for investigating Dark Photon identifications with Transformer architectures
 
 
 ## TL;DR
