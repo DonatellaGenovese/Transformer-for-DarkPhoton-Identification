@@ -22,4 +22,16 @@ and between $e_{ratio}$ and the number of graph nodes, for each prediction categ
   <img src="images/corr_eratio.png" alt="eratio vs nodes" width="400" height="300"/>
 </p>
 
+## Citation 
+Please cite this work as: 
 
+@article{article,
+author = {Genovese, Donatella and Devoto, Alessio and Carmignani, Joseph and Sebastiani, Cristiano and Scardapane, Simone and D'Onofrio, Monica},
+year = {2026},
+month = {08},
+pages = {},
+title = {Graph transformer and mixture of experts for rare signal detection in calorimeter data},
+volume = {7},
+journal = {Machine Learning: Science and Technology},
+doi = {10.1088/2632-2153/ae8e31}
+}
