@@ -1,5 +1,5 @@
 # Transformer for DarkPhoton Identification
-A repository for investigating Dark Photon identifications with Transformer architectures
+A repository for investigating Dark Photon identifications with Transformer architectures. Paper: [Graph transformer and mixture of experts for rare signal detection in calorimeter data](https://iopscience.iop.org/article/10.1088/2632-2153/ae8e31). 
 
 
 ## TL;DR
