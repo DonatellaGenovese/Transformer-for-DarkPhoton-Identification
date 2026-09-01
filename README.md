@@ -25,7 +25,7 @@ and between $e_{ratio}$ and the number of graph nodes, for each prediction categ
 ## Citation 
 Please cite this work as: 
 
-@article{article,
+@article{genovese2026,
 author = {Genovese, Donatella and Devoto, Alessio and Carmignani, Joseph and Sebastiani, Cristiano and Scardapane, Simone and D'Onofrio, Monica},
 year = {2026},
 month = {08},
